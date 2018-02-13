@@ -1,403 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=gbk"></meta>
+    <meta charset="UTF-8">
+    <title>HTML5ä¸­çº§è½¯ä»¶å·¥ç¨‹å¸ˆ</title>
+    <style>
+        html, body, div, p {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            font-size: 14px;
+            font-family: "microsoft yahei";
+            background-color: #ffffff
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            table-layout: fixed
+        }
+
+        th, td {
+            font-size: 14px;
+            padding: 0
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        img {
+            border: 0 none
+        }
+
+        .blue {
+            text-decoration: none;
+            color: #3c3d5d
+        }
+
+        .chead {
+            width: 1002px
+        }
+
+        .chead .logo {
+            width: 698px;
+            height: 90px
+        }
+
+        .chead .txt {
+            width: 152px;
+            height: 90px
+        }
+
+        .column {
+            width: 1002px;
+            line-height: 28px;
+            border: 1px solid #dedede
+        }
+
+        .column .hbox {
+            width: 185px;
+            height: 154px
+        }
+
+        .column .head {
+            display: block;
+            background-color: #fafafa
+        }
+
+        .column .box {
+            width: 100%;
+            background-color: #ffffff;
+            border-top: 2px solid #f2f3f5
+        }
+
+        .column .box1 {
+            width: 100%;
+            word-wrap: break-word;
+            color: #ffffff;
+            background-color: #3f4160
+        }
+
+        .column .box2 {
+            width: 100%;
+            background-color: #f8f9fa
+        }
+
+        .column .tba {
+            width: 940px;
+            padding: 0 30px 15px
+        }
+
+        .column .tbb {
+            width: 940px;
+            padding: 0 30px
+        }
+
+        .column .tb1 {
+            width: 900px;
+            line-height: 28px;
+            color: #333333;
+            word-break: break-all;
+            padding: 0 20px
+        }
+
+        .column .tb2 {
+            width: 430px;
+            padding: 0 20px
+        }
+
+        .column .tb3 {
+            width: 900px;
+            padding: 15px 20px 15px 0
+        }
+
+        .column .gray, .column .gray2 {
+            color: #999999;
+            word-break: break-all
+        }
+
+        .column .gray2 {
+            color: #666666
+        }
+
+        .column .plate1, .column .plate2 {
+            width: 430px;
+            height: 54px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #818ba3
+        }
+
+        .column .plate1 {
+            width: 900px;
+            padding: 0 50px
+        }
+
+        .column .plate1 .f16 {
+            font-size: 14px;
+            font-weight: normal;
+            color: #333333
+        }
+
+        .column .plate1 .f12 {
+            font-size: 12px;
+            font-weight: normal;
+            color: #999999
+        }
+
+        .column .keys, .column .keys2 {
+            width: 85px;
+            line-height: 28px;
+            color: #666666
+        }
+
+        .column .keys2 {
+            width: 110px
+        }
+
+        .column .txt1, .column .txt2, .column .txt3 {
+            width: 815px;
+            line-height: 28px;
+            color: #333333;
+            word-break: break-all
+        }
+
+        .column .txt2 {
+            width: 345px
+        }
+
+        .column .txt3 {
+            width: auto;
+            max-width: 815px;
+            font-size: 14px;
+            font-weight: bold
+        }
+
+        .column .txt4 {
+            width: 305px;
+            color: #ffffff;
+            word-break: break-all
+        }
+
+        .column .infr {
+            width: 767px;
+            color: #ffffff;
+            table-layout: auto
+        }
+
+        .column .vam, .column .grcha {
+            vertical-align: middle;
+            margin-left: 5px
+        }
+
+        .column .box1 .vam {
+            margin-right: 5px;
+            margin-left: 0
+        }
+
+        .column .name {
+            font-size: 24px;
+            padding-bottom: 18px
+        }
+
+        .column .icard {
+            color: #a1a3ae;
+            padding-bottom: 18px
+        }
+
+        .column .con {
+            border-top: 1px dotted #ddd
+        }
+
+        .column .pr20 {
+            width: 225px;
+            padding-right: 20px
+        }
+
+        .column .time {
+            width: 120px;
+            line-height: 28px;
+            color: #666666;
+            padding-left: 20px
+        }
+
+        .column .rtbox {
+            width: 765px;
+            line-height: 28px;
+            color: #333333;
+            padding: 0 20px 0 15px;
+            word-break: break-all
+        }
+
+        .column .hai, .column .guan {
+            line-height: 18px;
+            font-size: 12px;
+            color: #ffffff;
+            vertical-align: text-top;
+            margin-left: 5px;
+            padding: 1px 3px;
+            background-color: #3cbe7f;
+            border-radius: 2px
+        }
+
+        .column .guan {
+            background-color: #ff9f20
+        }
+
+        .column .tag {
+            display: inline-block;
+            word-break: break-all;
+            #display: inline;
+            #zoom: 1
+        }
+
+        .column .all {
+            color: #666;
+            padding: 10px 20px;
+            background-color: #fafafa
+        }
+
+        .column .tit {
+            width: 900px;
+            height: 40px;
+            color: #666666;
+            padding: 0 20px;
+            background-color: #f5f5f5
+        }
+
+        .column .p15 {
+            padding: 15px 0
+        }
+
+        .column .p5 {
+            display: inline-block;
+            color: #666666;
+            padding: 0 5px;
+            #display: inline;
+            #zoom: 1
+        }
+
+        .column .cell .skill {
+            width: 165px;
+            text-align: right;
+            padding-right: 15px
+        }
+
+        .column .cell .skbg, .column .cell .skco {
+            display: inline-block;
+            width: 245px;
+            height: 18px;
+            line-height: 18px;
+            font-size: 12px;
+            color: #ffffff;
+            vertical-align: top;
+            margin-top: 6px;
+            background-color: #dddddd;
+            border-radius: 20px;
+            #display: inline;
+            #zoom: 1
+        }
+
+        .column .cell .skco {
+            width: 235px;
+            font-style: normal;
+            margin-top: 0;
+            padding-left: 10px;
+            background-color: #ff9f20;
+            z-index: 3
+        }
+
+        .column .sl .skco {
+            width: 173px
+        }
+
+        .column .lh .skco {
+            width: 112px
+        }
+
+        .column .yb .skco {
+            width: 51px
+        }
+
+        .column .fbox strong {
+            font-size: 14px;
+            font-weight: bold
+        }
+
+        .column .cha {
+            font-size: 12px;
+            font-weight: normal;
+            color: #00457d;
+            margin-left: 5px
+        }
+
+        .column .cha:hover {
+            color: #ff6000
+        }
+
+        .column .email {
+            width: 330px
+        }
+
+        .eng td, .eng .txt3, .eng .fbox strong {
+            font-size: 13px;
+            font-family: 'Arial'
+        }
+
+        .eng .txt1, .eng .rtbox, .eng .phd {
+            width: 775px;
+            font-size: 13px;
+            font-family: 'Arial';
+            line-height: 28px
+        }
+
+        .eng .txt2 {
+            width: 305px
+        }
+
+        .eng .txt4 {
+            width: 245px
+        }
+
+        .eng .cell .txt3 {
+            width: 120px
+        }
+
+        .eng .time, .eng .keys {
+            width: 110px;
+            font-size: 13px;
+            text-align: right
+        }
+
+        .eng .cell .skill {
+            width: 130px
+        }
+
+        .eng .phd {
+            padding-left: 145px
+        }
+
+        .eng .keys {
+            padding-right: 15px
+        }
+
+        .eng .pr20 {
+            width: 205px
+        }
+
+        .eng .pr20 .keys {
+            width: 100px
+        }
+
+        .eng .email {
+            width: 270px
+        }
+    </style>
 </head>
 <body>
-<style>
-    html, body, div, p {
-        margin: 0;
-        padding: 0
-    }
-
-    body {
-        font-size: 14px;
-        font-family: "microsoft yahei";
-        background-color: #ffffff
-    }
-
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-        table-layout: fixed
-    }
-
-    th, td {
-        font-size: 14px;
-        padding: 0
-    }
-
-    a {
-        text-decoration: none
-    }
-
-    img {
-        border: 0 none
-    }
-
-    .blue {
-        text-decoration: none;
-        color: #3c3d5d
-    }
-
-    .chead {
-        width: 1002px
-    }
-
-    .chead .logo {
-        width: 698px;
-        height: 90px
-    }
-
-    .chead .txt {
-        width: 152px;
-        height: 90px
-    }
-
-    .column {
-        width: 1002px;
-        line-height: 28px;
-        border: 1px solid #dedede
-    }
-
-    .column .hbox {
-        width: 185px;
-        height: 154px
-    }
-
-    .column .head {
-        display: block;
-        background-color: #fafafa
-    }
-
-    .column .box {
-        width: 100%;
-        background-color: #ffffff;
-        border-top: 2px solid #f2f3f5
-    }
-
-    .column .box1 {
-        width: 100%;
-        word-wrap: break-word;
-        color: #ffffff;
-        background-color: #3f4160
-    }
-
-    .column .box2 {
-        width: 100%;
-        background-color: #f8f9fa
-    }
-
-    .column .tba {
-        width: 940px;
-        padding: 0 30px 15px
-    }
-
-    .column .tbb {
-        width: 940px;
-        padding: 0 30px
-    }
-
-    .column .tb1 {
-        width: 900px;
-        line-height: 28px;
-        color: #333333;
-        word-break: break-all;
-        padding: 0 20px
-    }
-
-    .column .tb2 {
-        width: 430px;
-        padding: 0 20px
-    }
-
-    .column .tb3 {
-        width: 900px;
-        padding: 15px 20px 15px 0
-    }
-
-    .column .gray, .column .gray2 {
-        color: #999999;
-        word-break: break-all
-    }
-
-    .column .gray2 {
-        color: #666666
-    }
-
-    .column .plate1, .column .plate2 {
-        width: 430px;
-        height: 54px;
-        font-size: 16px;
-        font-weight: bold;
-        color: #818ba3
-    }
-
-    .column .plate1 {
-        width: 900px;
-        padding: 0 50px
-    }
-
-    .column .plate1 .f16 {
-        font-size: 14px;
-        font-weight: normal;
-        color: #333333
-    }
-
-    .column .plate1 .f12 {
-        font-size: 12px;
-        font-weight: normal;
-        color: #999999
-    }
-
-    .column .keys, .column .keys2 {
-        width: 85px;
-        line-height: 28px;
-        color: #666666
-    }
-
-    .column .keys2 {
-        width: 110px
-    }
-
-    .column .txt1, .column .txt2, .column .txt3 {
-        width: 815px;
-        line-height: 28px;
-        color: #333333;
-        word-break: break-all
-    }
-
-    .column .txt2 {
-        width: 345px
-    }
-
-    .column .txt3 {
-        width: auto;
-        max-width: 815px;
-        font-size: 14px;
-        font-weight: bold
-    }
-
-    .column .txt4 {
-        width: 305px;
-        color: #ffffff;
-        word-break: break-all
-    }
-
-    .column .infr {
-        width: 767px;
-        color: #ffffff;
-        table-layout: auto
-    }
-
-    .column .vam, .column .grcha {
-        vertical-align: middle;
-        margin-left: 5px
-    }
-
-    .column .box1 .vam {
-        margin-right: 5px;
-        margin-left: 0
-    }
-
-    .column .name {
-        font-size: 24px;
-        padding-bottom: 18px
-    }
-
-    .column .icard {
-        color: #a1a3ae;
-        padding-bottom: 18px
-    }
-
-    .column .con {
-        border-top: 1px dotted #ddd
-    }
-
-    .column .pr20 {
-        width: 225px;
-        padding-right: 20px
-    }
-
-    .column .time {
-        width: 120px;
-        line-height: 28px;
-        color: #666666;
-        padding-left: 20px
-    }
-
-    .column .rtbox {
-        width: 765px;
-        line-height: 28px;
-        color: #333333;
-        padding: 0 20px 0 15px;
-        word-break: break-all
-    }
-
-    .column .hai, .column .guan {
-        line-height: 18px;
-        font-size: 12px;
-        color: #ffffff;
-        vertical-align: text-top;
-        margin-left: 5px;
-        padding: 1px 3px;
-        background-color: #3cbe7f;
-        border-radius: 2px
-    }
-
-    .column .guan {
-        background-color: #ff9f20
-    }
-
-    .column .tag {
-        display: inline-block;
-        word-break: break-all;
-        #display: inline;
-        #zoom: 1
-    }
-
-    .column .all {
-        color: #666;
-        padding: 10px 20px;
-        background-color: #fafafa
-    }
-
-    .column .tit {
-        width: 900px;
-        height: 40px;
-        color: #666666;
-        padding: 0 20px;
-        background-color: #f5f5f5
-    }
-
-    .column .p15 {
-        padding: 15px 0
-    }
-
-    .column .p5 {
-        display: inline-block;
-        color: #666666;
-        padding: 0 5px;
-        #display: inline;
-        #zoom: 1
-    }
-
-    .column .cell .skill {
-        width: 165px;
-        text-align: right;
-        padding-right: 15px
-    }
-
-    .column .cell .skbg, .column .cell .skco {
-        display: inline-block;
-        width: 245px;
-        height: 18px;
-        line-height: 18px;
-        font-size: 12px;
-        color: #ffffff;
-        vertical-align: top;
-        margin-top: 6px;
-        background-color: #dddddd;
-        border-radius: 20px;
-        #display: inline;
-        #zoom: 1
-    }
-
-    .column .cell .skco {
-        width: 235px;
-        font-style: normal;
-        margin-top: 0;
-        padding-left: 10px;
-        background-color: #ff9f20;
-        z-index: 3
-    }
-
-    .column .sl .skco {
-        width: 173px
-    }
-
-    .column .lh .skco {
-        width: 112px
-    }
-
-    .column .yb .skco {
-        width: 51px
-    }
-
-    .column .fbox strong {
-        font-size: 14px;
-        font-weight: bold
-    }
-
-    .column .cha {
-        font-size: 12px;
-        font-weight: normal;
-        color: #00457d;
-        margin-left: 5px
-    }
-
-    .column .cha:hover {
-        color: #ff6000
-    }
-
-    .column .email {
-        width: 330px
-    }
-
-    .eng td, .eng .txt3, .eng .fbox strong {
-        font-size: 13px;
-        font-family: 'Arial'
-    }
-
-    .eng .txt1, .eng .rtbox, .eng .phd {
-        width: 775px;
-        font-size: 13px;
-        font-family: 'Arial';
-        line-height: 28px
-    }
-
-    .eng .txt2 {
-        width: 305px
-    }
-
-    .eng .txt4 {
-        width: 245px
-    }
-
-    .eng .cell .txt3 {
-        width: 120px
-    }
-
-    .eng .time, .eng .keys {
-        width: 110px;
-        font-size: 13px;
-        text-align: right
-    }
-
-    .eng .cell .skill {
-        width: 130px
-    }
-
-    .eng .phd {
-        padding-left: 145px
-    }
-
-    .eng .keys {
-        padding-right: 15px
-    }
-
-    .eng .pr20 {
-        width: 205px
-    }
-
-    .eng .pr20 .keys {
-        width: 100px
-    }
-
-    .eng .email {
-        width: 270px
-    }
-</style>
 <table cellpadding="0" cellspacing="0" align="center" bgcolor="#fff" class="column">
     <tbody>
     <tr>
@@ -407,12 +408,12 @@
                 <tr>
                     <td class="hbox" align="middle"><img
                             src="http://i.51job.com/resume/ajax/image.php?type=avatar&amp;userid=95240813&amp;key=c448847f906239be891249bf0217802e"
-                            width="85" height="104" class="head" alt="Í·Ïñ"></td>
+                            width="85" height="104" class="head" alt="å¤´åƒ"></td>
                     <td>
                         <table cellspacing="0" cellpadding="0" border="0" class="infr">
                             <tbody>
                             <tr>
-                                <td colspan="2" class="name">ÁõÑÓÈğ</td>
+                                <td colspan="2" class="name">åˆ˜å»¶ç‘</td>
                                 <td align="right" class="icard">
                                     ID:95240813
                                 </td>
@@ -420,7 +421,7 @@
                             <tr>
                                 <td valign="top">
                                     <img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y1.png" width="20"
-                                         height="20">Ä¿Ç°ÕıÔÚÕÒ¹¤×÷
+                                         height="20">ç›®å‰æ­£åœ¨æ‰¾å·¥ä½œ
                                 </td>
                                 <td valign="top">
                                     <img class="vam" src="http://img01.51jobcdn.com/im/2016/resume/y2.png" width="20"
@@ -442,8 +443,8 @@
                             <tr>
                                 <td valign="top" colspan="3"><p><img class="vam"
                                                                      src="http://img01.51jobcdn.com/im/2016/resume/y4.png"
-                                                                     width="20" height="20">ÄĞ<span class="p5">|</span>29
-                                    Ëê (1988/10/25)<span class="p5">|</span>ÏÖ¾Ó×¡±±¾©<span class="p5">|</span>6Äê¹¤×÷¾­Ñé
+                                                                     width="20" height="20">ç”·<span class="p5">|</span>29
+                                    å² (1988/10/25)<span class="p5">|</span>ç°å±…ä½åŒ—äº¬<span class="p5">|</span>6å¹´å·¥ä½œç»éªŒ
                                 </p></td>
                             </tr>
                             </tbody>
@@ -469,19 +470,19 @@
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td colspan="2" class="plate2">×î½ü¹¤×÷</td>
+                                            <td colspan="2" class="plate2">æœ€è¿‘å·¥ä½œ</td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="keys">Ö°Î»£º</td>
-                                            <td valign="top" class="txt2">ÖĞ¼¶Ç°¶Ë¹¤³ÌÊ¦</td>
+                                            <td valign="top" class="keys">èŒä½ï¼š</td>
+                                            <td valign="top" class="txt2">ä¸­çº§å‰ç«¯å·¥ç¨‹å¸ˆ</td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="keys">¹«Ë¾£º</td>
-                                            <td valign="top" class="txt2">ÑÇĞÅ¿Æ¼¼ÓĞÏŞ¹«Ë¾</td>
+                                            <td valign="top" class="keys">å…¬å¸ï¼š</td>
+                                            <td valign="top" class="txt2">äºšä¿¡ç§‘æŠ€æœ‰é™å…¬å¸</td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="keys">ĞĞÒµ£º</td>
-                                            <td valign="top" class="txt2">Í¨ĞÅ/µçĞÅÔËÓª¡¢ÔöÖµ·şÎñ</td>
+                                            <td valign="top" class="keys">è¡Œä¸šï¼š</td>
+                                            <td valign="top" class="txt2">é€šä¿¡/ç”µä¿¡è¿è¥ã€å¢å€¼æœåŠ¡</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -496,19 +497,19 @@
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td colspan="2" class="plate2">×î¸ßÑ§Àú/Ñ§Î»</td>
+                                            <td colspan="2" class="plate2">æœ€é«˜å­¦å†/å­¦ä½</td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="keys">×¨Òµ£º</td>
-                                            <td valign="top" class="txt2">µç×ÓĞÅÏ¢¹¤³Ì</td>
+                                            <td valign="top" class="keys">ä¸“ä¸šï¼š</td>
+                                            <td valign="top" class="txt2">ç”µå­ä¿¡æ¯å·¥ç¨‹</td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="keys">Ñ§Ğ££º</td>
-                                            <td valign="top" class="txt2">ÉòÑôÊ¦·¶´óÑ§</td>
+                                            <td valign="top" class="keys">å­¦æ ¡ï¼š</td>
+                                            <td valign="top" class="txt2">æ²ˆé˜³å¸ˆèŒƒå¤§å­¦</td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="keys">Ñ§Àú/Ñ§Î»£º</td>
-                                            <td valign="top" class="txt2">±¾¿Æ</td>
+                                            <td valign="top" class="keys">å­¦å†/å­¦ä½ï¼š</td>
+                                            <td valign="top" class="txt2">æœ¬ç§‘</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -523,7 +524,7 @@
             <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
                 <tbody>
                 <tr>
-                    <td class="plate1">¸öÈËĞÅÏ¢</td>
+                    <td class="plate1">ä¸ªäººä¿¡æ¯</td>
                 </tr>
                 <tr>
                     <td class="tba">
@@ -534,7 +535,7 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="keys">QQºÅ£º</td>
+                                            <td valign="top" class="keys">QQå·ï¼š</td>
                                             <td valign="top" class="txt2">576431045</td>
                                         </tr>
                                         </tbody>
@@ -547,7 +548,7 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="keys">Éí¸ß£º</td>
+                                            <td valign="top" class="keys">èº«é«˜ï¼š</td>
                                             <td valign="top" class="txt2">176cm</td>
                                         </tr>
                                         </tbody>
@@ -557,8 +558,8 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="keys">»éÒö×´¿ö£º</td>
-                                            <td valign="top" class="txt2">Î´»é</td>
+                                            <td valign="top" class="keys">å©šå§»çŠ¶å†µï¼š</td>
+                                            <td valign="top" class="txt2">æœªå©š</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -569,8 +570,8 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="keys">ÕşÖÎÃæÃ²£º</td>
-                                            <td valign="top" class="txt2">¹²ÇàÍÅÔ±</td>
+                                            <td valign="top" class="keys">æ”¿æ²»é¢è²Œï¼š</td>
+                                            <td valign="top" class="txt2">å…±é’å›¢å‘˜</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -587,8 +588,8 @@
                 <tbody>
                 <tr>
                     <td class="plate1">
-                        Ä¿Ç°ÄêÊÕÈë
-                        <span>&nbsp;30ÍòÔª</span><span class="f12">£¨°üº¬»ù±¾¹¤×Ê¡¢²¹Ìù¡¢½±½ğ¡¢¹ÉÈ¨ÊÕÒæµÈ£©</span>
+                        ç›®å‰å¹´æ”¶å…¥
+                        <span>&nbsp;30ä¸‡å…ƒ</span><span class="f12">ï¼ˆåŒ…å«åŸºæœ¬å·¥èµ„ã€è¡¥è´´ã€å¥–é‡‘ã€è‚¡æƒæ”¶ç›Šç­‰ï¼‰</span>
                     </td>
                 </tr>
                 </tbody>
@@ -596,7 +597,7 @@
             <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
                 <tbody>
                 <tr>
-                    <td class="plate1">ÇóÖ°ÒâÏò</td>
+                    <td class="plate1">æ±‚èŒæ„å‘</td>
                 </tr>
                 <tr>
                     <td class="tba">
@@ -613,7 +614,7 @@
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="keys">¸öÈË±êÇ©£º</td>
+                                            <td valign="top" class="keys">ä¸ªäººæ ‡ç­¾ï¼š</td>
                                             <td valign="top" class="txt1">
                                                 <span class="tag">webapp&nbsp;&nbsp;</span><span class="tag">HTML5&amp;css3&nbsp;&nbsp;</span><span
                                                     class="tag">jquery&nbsp;&nbsp;</span><span class="tag">bootstrap&nbsp;&nbsp;</span><span
@@ -629,9 +630,9 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="keys">ÆÚÍûĞ½×Ê£º</td>
+                                            <td valign="top" class="keys">æœŸæœ›è–ªèµ„ï¼š</td>
                                             <td valign="top" class="txt2">15000-19999
-                                                Ôª/ÔÂ
+                                                å…ƒ/æœˆ
                                             </td>
                                         </tr>
                                         </tbody>
@@ -641,8 +642,8 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="keys">µØµã£º</td>
-                                            <td valign="top" class="txt2"><span class="tag">±±¾©</span></td>
+                                            <td valign="top" class="keys">åœ°ç‚¹ï¼š</td>
+                                            <td valign="top" class="txt2"><span class="tag">åŒ—äº¬</span></td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -653,10 +654,10 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="keys">Ö°ÄÜ/Ö°Î»£º</td>
+                                            <td valign="top" class="keys">èŒèƒ½/èŒä½ï¼š</td>
                                             <td valign="top" class="txt2">
-                                                <span class="tag">Èí¼ş¹¤³ÌÊ¦</span><span
-                                                    class="tag">&nbsp;&nbsp;ÖĞ¼¶¿ª·¢¹¤³ÌÊ¦</span>
+                                                <span class="tag">è½¯ä»¶å·¥ç¨‹å¸ˆ</span><span
+                                                    class="tag">&nbsp;&nbsp;ä¸­çº§å¼€å‘å·¥ç¨‹å¸ˆ</span>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -666,8 +667,8 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="keys">ĞĞÒµ£º</td>
-                                            <td valign="top" class="txt2"><span class="tag">¼ÆËã»úÈí¼ş</span></td>
+                                            <td valign="top" class="keys">è¡Œä¸šï¼š</td>
+                                            <td valign="top" class="txt2"><span class="tag">è®¡ç®—æœºè½¯ä»¶</span></td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -678,8 +679,8 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="keys">µ½¸ÚÊ±¼ä£º</td>
-                                            <td valign="top" class="txt2">1¸öÔÂÄÚ</td>
+                                            <td valign="top" class="keys">åˆ°å²—æ—¶é—´ï¼š</td>
+                                            <td valign="top" class="txt2">1ä¸ªæœˆå†…</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -688,8 +689,8 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="keys">¹¤×÷ÀàĞÍ£º</td>
-                                            <td valign="top" class="txt2">È«Ö°</td>
+                                            <td valign="top" class="keys">å·¥ä½œç±»å‹ï¼š</td>
+                                            <td valign="top" class="txt2">å…¨èŒ</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -706,8 +707,8 @@
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="keys">×ÔÎÒÆÀ¼Û£º</td>
-                                            <td valign="top" class="txt1">ÊìÏ¤ÒÆ¶¯¶ËµÄWebÓ¦ÓÃ£¬Ö÷Òª¼¼ÊõHTML5&amp;CSS3,JavaScript,phongegap£¬bootstrapµÈ¿ò¼Ü£¬²¢ÇÒÊìÏ¤win8£¬Android£¬iosµÈÒÆ¶¯¶ËÑĞ·¢»·¾³£¬×öÊÂÓĞÔğÈÎĞÄ£¬ÈÈ°®ÍÅ¶ÓºÏ×÷²¢ÉÆÓÚ¹µÍ¨£¬ÓĞ½ÏÇ¿µÄÑ§Ï°ÄÜÁ¦¡£</td>
+                                            <td valign="top" class="keys">è‡ªæˆ‘è¯„ä»·ï¼š</td>
+                                            <td valign="top" class="txt1">ç†Ÿæ‚‰ç§»åŠ¨ç«¯çš„Webåº”ç”¨ï¼Œä¸»è¦æŠ€æœ¯HTML5&amp;CSS3,JavaScript,phongegapï¼Œbootstrapç­‰æ¡†æ¶ï¼Œå¹¶ä¸”ç†Ÿæ‚‰win8ï¼ŒAndroidï¼Œiosç­‰ç§»åŠ¨ç«¯ç ”å‘ç¯å¢ƒï¼Œåšäº‹æœ‰è´£ä»»å¿ƒï¼Œçƒ­çˆ±å›¢é˜Ÿåˆä½œå¹¶å–„äºæ²Ÿé€šï¼Œæœ‰è¾ƒå¼ºçš„å­¦ä¹ èƒ½åŠ›ã€‚</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -722,7 +723,7 @@
             <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
                 <tbody>
                 <tr>
-                    <td class="plate1">¹¤×÷¾­Ñé</td>
+                    <td class="plate1">å·¥ä½œç»éªŒ</td>
                 </tr>
                 <tr>
                     <td class="tbb">
@@ -732,20 +733,20 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="time">2014/2-ÖÁ½ñ</td>
+                                            <td valign="top" class="time">2014/2-è‡³ä»Š</td>
                                             <td valign="top" class="rtbox">
-                                                <strong class="txt3">ÖĞ¼¶Ç°¶Ë¹¤³ÌÊ¦</strong><span class="p5">|</span><span>È«ÇòÑĞ·¢ÖĞĞÄ</span>
+                                                <strong class="txt3">ä¸­çº§å‰ç«¯å·¥ç¨‹å¸ˆ</strong><span class="p5">|</span><span>å…¨çƒç ”å‘ä¸­å¿ƒ</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="phd tb1" colspan="2">
-                                                <span>ÑÇĞÅ¿Æ¼¼ÓĞÏŞ¹«Ë¾</span><span class="gray">&nbsp;[4Äê]
+                                                <span>äºšä¿¡ç§‘æŠ€æœ‰é™å…¬å¸</span><span class="gray">&nbsp;[4å¹´]
                     </span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="phd tb1 gray2" colspan="2">Í¨ĞÅ/µçĞÅÔËÓª¡¢ÔöÖµ·şÎñ<span class="p5">|</span>10000ÈËÒÔÉÏ<span
-                                                    class="p5">|</span>ÉÏÊĞ¹«Ë¾
+                                            <td class="phd tb1 gray2" colspan="2">é€šä¿¡/ç”µä¿¡è¿è¥ã€å¢å€¼æœåŠ¡<span class="p5">|</span>10000äººä»¥ä¸Š<span
+                                                    class="p5">|</span>ä¸Šå¸‚å…¬å¸
                                             </td>
                                         </tr>
                                         <tr>
@@ -753,9 +754,9 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">¹¤×÷ÃèÊö£º</td>
+                                                        <td valign="top" class="keys">å·¥ä½œæè¿°ï¼š</td>
                                                         <td valign="top" class="txt1">
-                                                            ÑİÊ¾²úÆ·ÑĞ·¢£¬°üÀ¨¶¯»­ÌØĞ§£¬·ÂÍÓÂİÒÇ£¬ÎÂ¶È¼Æ¡£ÀàµçÉÌÒÆ¶¯¶Ë²úÆ·Éè¼ÆÒÔ¼°ÑĞ·¢
+                                                            æ¼”ç¤ºäº§å“ç ”å‘ï¼ŒåŒ…æ‹¬åŠ¨ç”»ç‰¹æ•ˆï¼Œä»¿é™€èºä»ªï¼Œæ¸©åº¦è®¡ã€‚ç±»ç”µå•†ç§»åŠ¨ç«¯äº§å“è®¾è®¡ä»¥åŠç ”å‘
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -773,18 +774,18 @@
                                         <tr>
                                             <td valign="top" class="time">2013/8-2014/2</td>
                                             <td valign="top" class="rtbox">
-                                                <strong class="txt3">HTML5¹¤³ÌÊ¦</strong><span class="p5">|</span><span>ÒÆ¶¯ÊµÊ©²¿</span>
+                                                <strong class="txt3">HTML5å·¥ç¨‹å¸ˆ</strong><span class="p5">|</span><span>ç§»åŠ¨å®æ–½éƒ¨</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="phd tb1" colspan="2">
-                                                <span>¶«·½¹úĞÅ¿Æ¼¼¹É·İÓĞÏŞ¹«Ë¾</span><span class="gray">&nbsp;[6¸öÔÂ]
+                                                <span>ä¸œæ–¹å›½ä¿¡ç§‘æŠ€è‚¡ä»½æœ‰é™å…¬å¸</span><span class="gray">&nbsp;[6ä¸ªæœˆ]
                     </span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="phd tb1 gray2" colspan="2">¼ÆËã»úÈí¼ş<span class="p5">|</span>1000-5000ÈË<span
-                                                    class="p5">|</span>ÉÏÊĞ¹«Ë¾
+                                            <td class="phd tb1 gray2" colspan="2">è®¡ç®—æœºè½¯ä»¶<span class="p5">|</span>1000-5000äºº<span
+                                                    class="p5">|</span>ä¸Šå¸‚å…¬å¸
                                             </td>
                                         </tr>
                                         <tr>
@@ -792,8 +793,8 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">¹¤×÷ÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">1.¸ºÔğÑĞ·¢¿Í»§¶Ë²úÆ·<br>2.ÏµÍ³¼Ü¹¹Éè¼ÆÒÔ¼°±àÂë<br>3.ÏµÍ³ĞÔÄÜÓÅ»¯
+                                                        <td valign="top" class="keys">å·¥ä½œæè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">1.è´Ÿè´£ç ”å‘å®¢æˆ·ç«¯äº§å“<br>2.ç³»ç»Ÿæ¶æ„è®¾è®¡ä»¥åŠç¼–ç <br>3.ç³»ç»Ÿæ€§èƒ½ä¼˜åŒ–
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -811,19 +812,19 @@
                                         <tr>
                                             <td valign="top" class="time">2012/2-2013/8</td>
                                             <td valign="top" class="rtbox">
-                                                <strong class="txt3">Èí¼ş¹¤³ÌÊ¦</strong><span
-                                                    class="p5">|</span><span>Ç¶ÈëÊ½</span>
+                                                <strong class="txt3">è½¯ä»¶å·¥ç¨‹å¸ˆ</strong><span
+                                                    class="p5">|</span><span>åµŒå…¥å¼</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="phd tb1" colspan="2">
-                                                <span>¶«Èí¼¯ÍÅ</span><span class="gray">&nbsp;[1Äê6¸öÔÂ]
+                                                <span>ä¸œè½¯é›†å›¢</span><span class="gray">&nbsp;[1å¹´6ä¸ªæœˆ]
                     </span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="phd tb1 gray2" colspan="2">¼ÆËã»úÈí¼ş<span class="p5">|</span>10000ÈËÒÔÉÏ<span
-                                                    class="p5">|</span>ÉÏÊĞ¹«Ë¾
+                                            <td class="phd tb1 gray2" colspan="2">è®¡ç®—æœºè½¯ä»¶<span class="p5">|</span>10000äººä»¥ä¸Š<span
+                                                    class="p5">|</span>ä¸Šå¸‚å…¬å¸
                                             </td>
                                         </tr>
                                         <tr>
@@ -831,9 +832,9 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">¹¤×÷ÃèÊö£º</td>
+                                                        <td valign="top" class="keys">å·¥ä½œæè¿°ï¼š</td>
                                                         <td valign="top" class="txt1">
-                                                            Ö÷Òª¹¤×÷ÊÇ¸ù¾İ¿Í»§Ìá³öµÄĞèÇó¿ª·¢¶ÔÓ¦¹¦ÄÜ£¬²¢²ÎÓë¿ª·¢»î¶¯ÖĞµÄĞèÇóÌÖÂÛ£¬Éè¼ÆÌÖÂÛ£¬,±àÂë£¬´úÂëÆÀÉóÒÔ¼°¼¼Êõµ÷ÑĞµÈ»î¶¯¡£
+                                                            ä¸»è¦å·¥ä½œæ˜¯æ ¹æ®å®¢æˆ·æå‡ºçš„éœ€æ±‚å¼€å‘å¯¹åº”åŠŸèƒ½ï¼Œå¹¶å‚ä¸å¼€å‘æ´»åŠ¨ä¸­çš„éœ€æ±‚è®¨è®ºï¼Œè®¾è®¡è®¨è®ºï¼Œ,ç¼–ç ï¼Œä»£ç è¯„å®¡ä»¥åŠæŠ€æœ¯è°ƒç ”ç­‰æ´»åŠ¨ã€‚
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -852,7 +853,7 @@
             <table xmlns="" cellspacing="0" cellpadding="0" border="0" class="box">
                 <tbody>
                 <tr>
-                    <td class="plate1">ÏîÄ¿¾­Ñé</td>
+                    <td class="plate1">é¡¹ç›®ç»éªŒ</td>
                 </tr>
                 <tr>
                     <td class="tba">
@@ -862,7 +863,7 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="time">2014/12-ÖÁ½ñ</td>
+                                            <td valign="top" class="time">2014/12-è‡³ä»Š</td>
                                             <td valign="top" class="rtbox"><strong>Eboss</strong></td>
                                         </tr>
                                         <tr>
@@ -870,9 +871,9 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
+                                                        <td valign="top" class="keys">é¡¹ç›®æè¿°ï¼š</td>
                                                         <td valign="top" class="txt1">
-                                                            webstorm(¿ª·¢¹¤¾ß)¸ºÔğebossÏà¹Ø²úÆ·µÄdemo£¬Î¬»¤MDKÃÅ»§ÍøÕ¾£¬´´ĞÂÑĞ·¢
+                                                            webstorm(å¼€å‘å·¥å…·)è´Ÿè´£ebossç›¸å…³äº§å“çš„demoï¼Œç»´æŠ¤MDKé—¨æˆ·ç½‘ç«™ï¼Œåˆ›æ–°ç ”å‘
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -884,8 +885,8 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÔğÈÎÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">1.´´ĞÂ²úÆ·¼Ü¹¹Éè¼Æ£¬±àÂëÒÔ¼°ÑĞ·¢<br>2.Î¬»¤EbossÏà¹ØwebAPP<br>3.¶¨Òåweb²àÏà¹ØAPI
+                                                        <td valign="top" class="keys">è´£ä»»æè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">1.åˆ›æ–°äº§å“æ¶æ„è®¾è®¡ï¼Œç¼–ç ä»¥åŠç ”å‘<br>2.ç»´æŠ¤Ebossç›¸å…³webAPP<br>3.å®šä¹‰webä¾§ç›¸å…³API
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -909,8 +910,8 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">webstorm(¿ª·¢¹¤¾ß)½¨ÉèÊÓÆµÖ±²¥ÍøÕ¾</td>
+                                                        <td valign="top" class="keys">é¡¹ç›®æè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">webstorm(å¼€å‘å·¥å…·)å»ºè®¾è§†é¢‘ç›´æ’­ç½‘ç«™</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -921,8 +922,8 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÔğÈÎÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">¸ºÔğÕûÕ¾µÄ¾²Ì¬Ğ§¹ûÒÔ¼°ÓÃ»§½»»¥Ğ§¹û</td>
+                                                        <td valign="top" class="keys">è´£ä»»æè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">è´Ÿè´£æ•´ç«™çš„é™æ€æ•ˆæœä»¥åŠç”¨æˆ·äº¤äº’æ•ˆæœ</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -945,8 +946,8 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">webstorm(¿ª·¢¹¤¾ß)ÊÓÆµ²É¼¯²¥·Å¿Í»§¶Ë</td>
+                                                        <td valign="top" class="keys">é¡¹ç›®æè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">webstorm(å¼€å‘å·¥å…·)è§†é¢‘é‡‡é›†æ’­æ”¾å®¢æˆ·ç«¯</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -957,8 +958,8 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÔğÈÎÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">¸ºÔğ»î¶¯Ò³ÃæÕ¹Ê¾Î¬»¤£¬Î¢ĞÅ¹«ÖÚºÅ¿ª·¢ÒÔ¼°ÈÕ³£Î¬»¤</td>
+                                                        <td valign="top" class="keys">è´£ä»»æè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">è´Ÿè´£æ´»åŠ¨é¡µé¢å±•ç¤ºç»´æŠ¤ï¼Œå¾®ä¿¡å…¬ä¼—å·å¼€å‘ä»¥åŠæ—¥å¸¸ç»´æŠ¤</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -974,15 +975,15 @@
                                         <tbody>
                                         <tr>
                                             <td valign="top" class="time">2013/10-2013/11</td>
-                                            <td valign="top" class="rtbox"><strong>ºş±±Ô¤¾¯ÏµÍ³</strong></td>
+                                            <td valign="top" class="rtbox"><strong>æ¹–åŒ—é¢„è­¦ç³»ç»Ÿ</strong></td>
                                         </tr>
                                         <tr>
                                             <td class="tb1" colspan="2">
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">WebStorm(¿ª·¢¹¤¾ß)<br>mac&#x20;os(Ó²¼ş»·¾³)±¾ÏîÄ¿²ÉÓÃ»ìºÏ¿ª·¢Ä£Ê½£¬¼´Ô­ÉúÓ¦ÓÃÄÚÇ¶webÕ¾µã¡£<br>webÕ¾µã²ÉÓÃHTML5&amp;CSS3£¬js¼¼Êõ£¬¸¨Ö®ÒÔjquerymobile£¬bootstrapµÈÏìÓ¦Ê½¿ò¼Ü¡£
+                                                        <td valign="top" class="keys">é¡¹ç›®æè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">WebStorm(å¼€å‘å·¥å…·)<br>mac&#x20;os(ç¡¬ä»¶ç¯å¢ƒ)æœ¬é¡¹ç›®é‡‡ç”¨æ··åˆå¼€å‘æ¨¡å¼ï¼Œå³åŸç”Ÿåº”ç”¨å†…åµŒwebç«™ç‚¹ã€‚<br>webç«™ç‚¹é‡‡ç”¨HTML5&amp;CSS3ï¼ŒjsæŠ€æœ¯ï¼Œè¾…ä¹‹ä»¥jquerymobileï¼Œbootstrapç­‰å“åº”å¼æ¡†æ¶ã€‚
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -994,8 +995,8 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÔğÈÎÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">ÏîÄ¿¼Ü¹¹ºÍÉè¼Æ£¬<br>ÏìÓ¦Ê½webÕ¾µã¿ª·¢£¬<br>Ğ­Í¬iosºÍandroid¹¤³ÌÊ¦Éú³É¿Í»§¶Ë£¬<br>bugĞŞ¸ÄºÍÕ¾µãÎ¬»¤
+                                                        <td valign="top" class="keys">è´£ä»»æè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">é¡¹ç›®æ¶æ„å’Œè®¾è®¡ï¼Œ<br>å“åº”å¼webç«™ç‚¹å¼€å‘ï¼Œ<br>ååŒioså’Œandroidå·¥ç¨‹å¸ˆç”Ÿæˆå®¢æˆ·ç«¯ï¼Œ<br>bugä¿®æ”¹å’Œç«™ç‚¹ç»´æŠ¤
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1012,15 +1013,15 @@
                                         <tbody>
                                         <tr>
                                             <td valign="top" class="time">2013/9-2013/10</td>
-                                            <td valign="top" class="rtbox"><strong>Ìì½òÍø¸ñÏµÍ³</strong></td>
+                                            <td valign="top" class="rtbox"><strong>å¤©æ´¥ç½‘æ ¼ç³»ç»Ÿ</strong></td>
                                         </tr>
                                         <tr>
                                             <td class="tb1" colspan="2">
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">WebStorm(¿ª·¢¹¤¾ß)<br>mac&#x20;os&#x20;pc(Ó²¼ş»·¾³)±¾ÏîÄ¿²ÉÓÃmvvmµÄ·Ö²ã¼Ü¹¹£¬±íÏÖ²ãºÍÊı¾İ²ã·ÖÀë£¬ÒµÎñ¿ØÖÆ²ã¸¨ÖúÊı¾İ²ãµÄÄ£Ê½¿ª·¢¡£<br>±íÏÖ²ã²ÉÓÃĞÂµÄweb¼¼Êõcss3£¬Ê¹µÃ¸ü¼ÓÌù½üÓÃ»§¡£±íÏÖ²ãµÄÊı¾İÊ¹ÓÃknockoutµÄÊµÊ±¸üĞÂµÄÌØĞÔ½øĞĞ°ó¶¨¡£
+                                                        <td valign="top" class="keys">é¡¹ç›®æè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">WebStorm(å¼€å‘å·¥å…·)<br>mac&#x20;os&#x20;pc(ç¡¬ä»¶ç¯å¢ƒ)æœ¬é¡¹ç›®é‡‡ç”¨mvvmçš„åˆ†å±‚æ¶æ„ï¼Œè¡¨ç°å±‚å’Œæ•°æ®å±‚åˆ†ç¦»ï¼Œä¸šåŠ¡æ§åˆ¶å±‚è¾…åŠ©æ•°æ®å±‚çš„æ¨¡å¼å¼€å‘ã€‚<br>è¡¨ç°å±‚é‡‡ç”¨æ–°çš„webæŠ€æœ¯css3ï¼Œä½¿å¾—æ›´åŠ è´´è¿‘ç”¨æˆ·ã€‚è¡¨ç°å±‚çš„æ•°æ®ä½¿ç”¨knockoutçš„å®æ—¶æ›´æ–°çš„ç‰¹æ€§è¿›è¡Œç»‘å®šã€‚
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1032,8 +1033,8 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÔğÈÎÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">ÏîÄ¿¼Ü¹¹ºÍÉè¼Æ£¬<br>ÏìÓ¦Ê½webÕ¾µã¿ª·¢£¬<br>Ğ­Í¬iosºÍandroid¹¤³ÌÊ¦Éú³É¿Í»§¶Ë£¬<br>bugĞŞ¸ÄºÍÕ¾µãÎ¬»¤
+                                                        <td valign="top" class="keys">è´£ä»»æè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">é¡¹ç›®æ¶æ„å’Œè®¾è®¡ï¼Œ<br>å“åº”å¼webç«™ç‚¹å¼€å‘ï¼Œ<br>ååŒioså’Œandroidå·¥ç¨‹å¸ˆç”Ÿæˆå®¢æˆ·ç«¯ï¼Œ<br>bugä¿®æ”¹å’Œç«™ç‚¹ç»´æŠ¤
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1050,15 +1051,15 @@
                                         <tbody>
                                         <tr>
                                             <td valign="top" class="time">2013/2-2013/7</td>
-                                            <td valign="top" class="rtbox"><strong>Í¼Æ¬×Ü»ãipad¿Í»§¶Ë</strong></td>
+                                            <td valign="top" class="rtbox"><strong>å›¾ç‰‡æ€»æ±‡ipadå®¢æˆ·ç«¯</strong></td>
                                         </tr>
                                         <tr>
                                             <td class="tb1" colspan="2">
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">Xcode+Dreamweaver(¿ª·¢¹¤¾ß)<br>ipad²âÊÔ»ú£¬mac&#x20;pc(Ó²¼ş»·¾³)1.¸ÃÏîÄ¿Ö¼ÔÚ¿ª·¢¶à½ÇÉ«£¨ÆÕÍ¨ÓÃ»§£¬ÉãÓ°Ê¦£¬Ç©Ô¼¿Í»§£©Í¼Æ¬Ô¤ÀÀ£¬ÊÕ²Ø£¬·¢²¼µÈ¶à¹¦ÄÜµÄÍ¼Æ¬¿Í»§¶Ë<br>2.ÔËÓÃphonegap£¬bootstrap¿ò¼Ü£¬ÒÔ¼°html5&amp;css3¼¼Êõ<br>3.±¾ÏîÄ¿½á¹¹ÉÏ·ÖÎª±íÏÖ²ã¡¢ÒµÎñ²ãºÍÊı¾İ·ÃÎÊ²ã£¬²ã´Î¼äµÄÒÀÀµ¹ØÏµ×ÔÏÂµ½ÉÏ¡£ÔËÓÃknockout¿ò¼Ü£¬Á¬½ÓÒµÎñ²ãºÍ±íÏÖ²ãÊµÏÖ½»»¥¡£Êı¾İ·ÃÎÊ²ã¶ÀÁ¢×ö½Ó¿Ú£¬µ¥¶À·â×°¡£
+                                                        <td valign="top" class="keys">é¡¹ç›®æè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">Xcode+Dreamweaver(å¼€å‘å·¥å…·)<br>ipadæµ‹è¯•æœºï¼Œmac&#x20;pc(ç¡¬ä»¶ç¯å¢ƒ)1.è¯¥é¡¹ç›®æ—¨åœ¨å¼€å‘å¤šè§’è‰²ï¼ˆæ™®é€šç”¨æˆ·ï¼Œæ‘„å½±å¸ˆï¼Œç­¾çº¦å®¢æˆ·ï¼‰å›¾ç‰‡é¢„è§ˆï¼Œæ”¶è—ï¼Œå‘å¸ƒç­‰å¤šåŠŸèƒ½çš„å›¾ç‰‡å®¢æˆ·ç«¯<br>2.è¿ç”¨phonegapï¼Œbootstrapæ¡†æ¶ï¼Œä»¥åŠhtml5&amp;css3æŠ€æœ¯<br>3.æœ¬é¡¹ç›®ç»“æ„ä¸Šåˆ†ä¸ºè¡¨ç°å±‚ã€ä¸šåŠ¡å±‚å’Œæ•°æ®è®¿é—®å±‚ï¼Œå±‚æ¬¡é—´çš„ä¾èµ–å…³ç³»è‡ªä¸‹åˆ°ä¸Šã€‚è¿ç”¨knockoutæ¡†æ¶ï¼Œè¿æ¥ä¸šåŠ¡å±‚å’Œè¡¨ç°å±‚å®ç°äº¤äº’ã€‚æ•°æ®è®¿é—®å±‚ç‹¬ç«‹åšæ¥å£ï¼Œå•ç‹¬å°è£…ã€‚
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1070,9 +1071,9 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÔğÈÎÃèÊö£º</td>
+                                                        <td valign="top" class="keys">è´£ä»»æè¿°ï¼š</td>
                                                         <td valign="top" class="txt1">
-                                                            ÎÒÔÚÏîÄ¿ÖĞÖ÷Òª¸ºÔğ¸öÈË¿Õ¼ä£¬µÇÈë£¬»ØÊÕÕ¾µÈÄ£¿éÉè¼ÆºÍ¿ª·¢£¬²¢ÇÒ²ÎÓëÍêÉÆÎÄµµ£¬BugĞŞ¸ÄºÍÎ¬»¤¡£<br>Æä´ÎĞ­Í¬·şÎñ¶ËÍê³ÉÊı¾İ½Ó¿ÚµÄ¿ª·¢¹¤×÷¡£
+                                                            æˆ‘åœ¨é¡¹ç›®ä¸­ä¸»è¦è´Ÿè´£ä¸ªäººç©ºé—´ï¼Œç™»å…¥ï¼Œå›æ”¶ç«™ç­‰æ¨¡å—è®¾è®¡å’Œå¼€å‘ï¼Œå¹¶ä¸”å‚ä¸å®Œå–„æ–‡æ¡£ï¼ŒBugä¿®æ”¹å’Œç»´æŠ¤ã€‚<br>å…¶æ¬¡ååŒæœåŠ¡ç«¯å®Œæˆæ•°æ®æ¥å£çš„å¼€å‘å·¥ä½œã€‚
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1089,15 +1090,15 @@
                                         <tbody>
                                         <tr>
                                             <td valign="top" class="time">2012/11-2013/1</td>
-                                            <td valign="top" class="rtbox"><strong>ÔÃ¶Á</strong></td>
+                                            <td valign="top" class="rtbox"><strong>æ‚¦è¯»</strong></td>
                                         </tr>
                                         <tr>
                                             <td class="tb1" colspan="2">
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">VS2012(¿ª·¢¹¤¾ß)<br>´îÔØwin8µÄÌ¨Ê½ºÍÆ½°åµçÄÔ(Ó²¼ş»·¾³)<br>win8+WINjs(Èí¼ş»·¾³)¸ÃÏîÄ¿ÊÇÒ»¿îwin8Metro·ç¸ñµÄĞÂÎÅÓ¦ÓÃ£¬·½±ãÓÃ»§Ô¤ÀÀÉí±ßÖ®ÊÂ£¬ÒÔÔÄ¶ÁĞÂÎÅ£¬¶¨ÖÆĞÂÎÅÔ´µÈ¹¦ÄÜÎªÖ÷£¬¸¨ÒÔ¶ÁÊéºÍÔ¤ÀÀÃÀÍ¼µÈ¹¦ÄÜ£¬ÔöÌíÓ¦ÓÃµÄÊµÓÃĞÔ¡£Ó¦ÓÃ¹²ÓĞÁù¸öÆµµÀ£¬ÓÃ»§¿ÉÒÔ¸ù¾İ×Ô¼ºµÄÏ²ºÃ¶¨ÖÆĞÂÎÅÔ´£¬À´·á¸»×Ô¼ºÏ²»¶µÄÆµµÀ¡£Ö§³ÖËõ·Å£¬´¥¿ØÊ½½»»¥²Ù×÷¡£
+                                                        <td valign="top" class="keys">é¡¹ç›®æè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">VS2012(å¼€å‘å·¥å…·)<br>æ­è½½win8çš„å°å¼å’Œå¹³æ¿ç”µè„‘(ç¡¬ä»¶ç¯å¢ƒ)<br>win8+WINjs(è½¯ä»¶ç¯å¢ƒ)è¯¥é¡¹ç›®æ˜¯ä¸€æ¬¾win8Metroé£æ ¼çš„æ–°é—»åº”ç”¨ï¼Œæ–¹ä¾¿ç”¨æˆ·é¢„è§ˆèº«è¾¹ä¹‹äº‹ï¼Œä»¥é˜…è¯»æ–°é—»ï¼Œå®šåˆ¶æ–°é—»æºç­‰åŠŸèƒ½ä¸ºä¸»ï¼Œè¾…ä»¥è¯»ä¹¦å’Œé¢„è§ˆç¾å›¾ç­‰åŠŸèƒ½ï¼Œå¢æ·»åº”ç”¨çš„å®ç”¨æ€§ã€‚åº”ç”¨å…±æœ‰å…­ä¸ªé¢‘é“ï¼Œç”¨æˆ·å¯ä»¥æ ¹æ®è‡ªå·±çš„å–œå¥½å®šåˆ¶æ–°é—»æºï¼Œæ¥ä¸°å¯Œè‡ªå·±å–œæ¬¢çš„é¢‘é“ã€‚æ”¯æŒç¼©æ”¾ï¼Œè§¦æ§å¼äº¤äº’æ“ä½œã€‚
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1109,9 +1110,9 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÔğÈÎÃèÊö£º</td>
+                                                        <td valign="top" class="keys">è´£ä»»æè¿°ï¼š</td>
                                                         <td valign="top" class="txt1">
-                                                            ¶ÀÁ¢¿ª·¢£¬¸ºÔğÕûÌå¼Ü¹¹£¬¹¦ÄÜÄ£¿éÉè¼Æ£¬±àÂë£¬Ğ´ÎÄµµ£¬BugĞŞ¸ÄºÍÎ¬»¤¡£
+                                                            ç‹¬ç«‹å¼€å‘ï¼Œè´Ÿè´£æ•´ä½“æ¶æ„ï¼ŒåŠŸèƒ½æ¨¡å—è®¾è®¡ï¼Œç¼–ç ï¼Œå†™æ–‡æ¡£ï¼ŒBugä¿®æ”¹å’Œç»´æŠ¤ã€‚
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1128,15 +1129,15 @@
                                         <tbody>
                                         <tr>
                                             <td valign="top" class="time">2012/7-2012/10</td>
-                                            <td valign="top" class="rtbox"><strong>¹ÜÀíÆ½Ì¨</strong></td>
+                                            <td valign="top" class="rtbox"><strong>ç®¡ç†å¹³å°</strong></td>
                                         </tr>
                                         <tr>
                                             <td class="tb1" colspan="2">
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÏîÄ¿ÃèÊö£º</td>
-                                                        <td valign="top" class="txt1">VS2012£¬SQLServer(¿ª·¢¹¤¾ß)<br>mvc4.0(Èí¼ş»·¾³)¸ÃÏîÄ¿×÷Îªwin8Ó¦ÓÃµÄ¸¨ÖúÏîÄ¿£¬Ö÷Òª¹¦ÄÜÊÇ¶ÔÍâÌá¹²Êı¾İ½Ó¿Ú£¬ÒÔ¼°¶ÔÓÃ»§ĞÅÏ¢µÄ¹ÜÀí£¬ÒÔ¼°¶ÔSQLÊı¾İµÄ²Ù×÷¡£ÔËÓÃMvcÉè¼ÆÄ£Ê½£¬¼´ÊÇÄ£ĞÍ(model)£­ÊÓÍ¼(view)£­¿ØÖÆÆ÷(controller)µÄËõĞ´£¬Ê¹µÃÎÒÃÇ¸ü·½±ã¿ì½İµÄÊµÏÖ½»»¥¡£
+                                                        <td valign="top" class="keys">é¡¹ç›®æè¿°ï¼š</td>
+                                                        <td valign="top" class="txt1">VS2012ï¼ŒSQLServer(å¼€å‘å·¥å…·)<br>mvc4.0(è½¯ä»¶ç¯å¢ƒ)è¯¥é¡¹ç›®ä½œä¸ºwin8åº”ç”¨çš„è¾…åŠ©é¡¹ç›®ï¼Œä¸»è¦åŠŸèƒ½æ˜¯å¯¹å¤–æå…±æ•°æ®æ¥å£ï¼Œä»¥åŠå¯¹ç”¨æˆ·ä¿¡æ¯çš„ç®¡ç†ï¼Œä»¥åŠå¯¹SQLæ•°æ®çš„æ“ä½œã€‚è¿ç”¨Mvcè®¾è®¡æ¨¡å¼ï¼Œå³æ˜¯æ¨¡å‹(model)ï¼è§†å›¾(view)ï¼æ§åˆ¶å™¨(controller)çš„ç¼©å†™ï¼Œä½¿å¾—æˆ‘ä»¬æ›´æ–¹ä¾¿å¿«æ·çš„å®ç°äº¤äº’ã€‚
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1148,9 +1149,9 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÔğÈÎÃèÊö£º</td>
+                                                        <td valign="top" class="keys">è´£ä»»æè¿°ï¼š</td>
                                                         <td valign="top" class="txt1">
-                                                            ¸ºÔğOauthÊÚÈ¨µÇÈëÄ£¿é¹¦ÄÜ¿ª·¢£¬¹ÜÀíÆ½Ì¨½çÃæÓÅ»¯£¨HTML5£¬cssÒÔ¼°jquery£©£¬ÒÔ¼°Êı¾İ´¦ÀíÒµÎñ£¨°üÀ¨Õë¶ÔÊı¾İ±íµÄÔöÉ¾¸Ä²éµÈ²Ù×÷£©¡£Õë¶ÔÕâĞ©ĞèÇóÈ¥±àÂëºÍ²âÊÔ¡£
+                                                            è´Ÿè´£Oauthæˆæƒç™»å…¥æ¨¡å—åŠŸèƒ½å¼€å‘ï¼Œç®¡ç†å¹³å°ç•Œé¢ä¼˜åŒ–ï¼ˆHTML5ï¼Œcssä»¥åŠjqueryï¼‰ï¼Œä»¥åŠæ•°æ®å¤„ç†ä¸šåŠ¡ï¼ˆåŒ…æ‹¬é’ˆå¯¹æ•°æ®è¡¨çš„å¢åˆ æ”¹æŸ¥ç­‰æ“ä½œï¼‰ã€‚é’ˆå¯¹è¿™äº›éœ€æ±‚å»ç¼–ç å’Œæµ‹è¯•ã€‚
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1169,7 +1170,7 @@
             <table xmlns="" class="box">
                 <tbody>
                 <tr>
-                    <td class="plate1">½ÌÓı¾­Àú</td>
+                    <td class="plate1">æ•™è‚²ç»å†</td>
                 </tr>
                 <tr>
                     <td class="tba">
@@ -1180,19 +1181,19 @@
                                         <tbody>
                                         <tr>
                                             <td valign="top" class="time">2008/9-2012/6</td>
-                                            <td valign="top" class="rtbox"><strong>ÉòÑôÊ¦·¶´óÑ§</strong></td>
+                                            <td valign="top" class="rtbox"><strong>æ²ˆé˜³å¸ˆèŒƒå¤§å­¦</strong></td>
                                         </tr>
                                         <tr>
-                                            <td class="tb1" colspan="2">±¾¿Æ<span class="p5">|</span>µç×ÓĞÅÏ¢¹¤³Ì</td>
+                                            <td class="tb1" colspan="2">æœ¬ç§‘<span class="p5">|</span>ç”µå­ä¿¡æ¯å·¥ç¨‹</td>
                                         </tr>
                                         <tr>
                                             <td class="tb1" colspan="2">
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">×¨ÒµÃèÊö£º</td>
+                                                        <td valign="top" class="keys">ä¸“ä¸šæè¿°ï¼š</td>
                                                         <td valign="top" class="txt1">
-                                                            ¸Ã×¨ÒµÖ÷ÒªÅàÑø¾ßÓĞµç×ÓĞÅÏ¢¼¼ÊõºÍĞÅÏ¢ÏµÍ³µÄ»ù´¡ÖªÊ¶£¬ÄÜ´ÓÊÂ¸÷Ààµç×ÓÉè±¸ºÍĞÅÏ¢ÏµÍ³µÄÑĞ¾¿¡¢Éè¼Æ¡¢ÖÆÔì¡¢Ó¦ÓÃºÍ¿ª·¢µÄ¸ßµÈ¹¤³Ì¼¼ÊõÈË²Å¼°ÖĞµÈÖ°Òµ¼¼ÊõÑ§Ğ£ºÏ¸ñµÄ×¨Òµ½ÌÊ¦¡£Ö÷Òª¿Î³ÌÓĞ´óÑ§ÎïÀí¡¢Ä£ÄâµçÂ·¡¢Êı×ÖµçÂ·¡¢Î¢»úÔ­Àí¡¢µç´Å³¡ÀíÂÛ¡¢CÓïÑÔ¡¢¼ÆËã»ú¿ØÖÆ¼¼ÊõµÈ¡£
+                                                            è¯¥ä¸“ä¸šä¸»è¦åŸ¹å…»å…·æœ‰ç”µå­ä¿¡æ¯æŠ€æœ¯å’Œä¿¡æ¯ç³»ç»Ÿçš„åŸºç¡€çŸ¥è¯†ï¼Œèƒ½ä»äº‹å„ç±»ç”µå­è®¾å¤‡å’Œä¿¡æ¯ç³»ç»Ÿçš„ç ”ç©¶ã€è®¾è®¡ã€åˆ¶é€ ã€åº”ç”¨å’Œå¼€å‘çš„é«˜ç­‰å·¥ç¨‹æŠ€æœ¯äººæ‰åŠä¸­ç­‰èŒä¸šæŠ€æœ¯å­¦æ ¡åˆæ ¼çš„ä¸“ä¸šæ•™å¸ˆã€‚ä¸»è¦è¯¾ç¨‹æœ‰å¤§å­¦ç‰©ç†ã€æ¨¡æ‹Ÿç”µè·¯ã€æ•°å­—ç”µè·¯ã€å¾®æœºåŸç†ã€ç”µç£åœºç†è®ºã€Cè¯­è¨€ã€è®¡ç®—æœºæ§åˆ¶æŠ€æœ¯ç­‰ã€‚
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1212,8 +1213,8 @@
                 <tbody>
                 <tr>
                     <td class="plate1">
-                        ¼¼ÄÜÌØ³¤
-                        <span class="f12">£¨°üÀ¨IT¼¼ÄÜ¡¢ÓïÑÔÄÜÁ¦¡¢Ö¤Êé¡¢³É¼¨¡¢ÅàÑµ¾­Àú£©</span>
+                        æŠ€èƒ½ç‰¹é•¿
+                        <span class="f12">ï¼ˆåŒ…æ‹¬ITæŠ€èƒ½ã€è¯­è¨€èƒ½åŠ›ã€è¯ä¹¦ã€æˆç»©ã€åŸ¹è®­ç»å†ï¼‰</span>
                     </td>
                 </tr>
                 <tr>
@@ -1221,7 +1222,7 @@
                         <table cellspacing="0" cellpadding="0" border="0">
                             <tbody>
                             <tr>
-                                <td class="tit">¼¼ÄÜ/ÓïÑÔ</td>
+                                <td class="tit">æŠ€èƒ½/è¯­è¨€</td>
                             </tr>
                             <tr>
                                 <td class="p15">
@@ -1232,8 +1233,8 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td class="skill"><strong class="txt3">Ó¢Óï</strong></td>
-                                                        <td valign="top"><span class="skbg"><span class="skco">Á¼ºÃ</span></span>
+                                                        <td class="skill"><strong class="txt3">è‹±è¯­</strong></td>
+                                                        <td valign="top"><span class="skbg"><span class="skco">è‰¯å¥½</span></span>
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1244,7 +1245,7 @@
                                                     <tbody>
                                                     <tr>
                                                         <td class="skill"><strong class="txt3">Mac</strong></td>
-                                                        <td valign="top"><span class="skbg"><span class="skco">ÊìÁ·</span></span>
+                                                        <td valign="top"><span class="skbg"><span class="skco">ç†Ÿç»ƒ</span></span>
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1257,7 +1258,7 @@
                                                     <tbody>
                                                     <tr>
                                                         <td class="skill"><strong class="txt3">HTML</strong></td>
-                                                        <td valign="top"><span class="skbg"><span class="skco">¾«Í¨</span></span>
+                                                        <td valign="top"><span class="skbg"><span class="skco">ç²¾é€š</span></span>
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1268,7 +1269,7 @@
                                                     <tbody>
                                                     <tr>
                                                         <td class="skill"><strong class="txt3">JavaScript</strong></td>
-                                                        <td valign="top"><span class="skbg"><span class="skco">ÊìÁ·</span></span>
+                                                        <td valign="top"><span class="skbg"><span class="skco">ç†Ÿç»ƒ</span></span>
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1281,7 +1282,7 @@
                                                     <tbody>
                                                     <tr>
                                                         <td class="skill"><strong class="txt3">CSS</strong></td>
-                                                        <td valign="top"><span class="skbg"><span class="skco">¾«Í¨</span></span>
+                                                        <td valign="top"><span class="skbg"><span class="skco">ç²¾é€š</span></span>
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1292,7 +1293,7 @@
                                                     <tbody>
                                                     <tr>
                                                         <td class="skill"><strong class="txt3">ASP.NET</strong></td>
-                                                        <td valign="top"><span class="skbg"><span class="skco">Ò»°ã</span></span>
+                                                        <td valign="top"><span class="skbg"><span class="skco">ä¸€èˆ¬</span></span>
                                                         </td>
                                                     </tr>
                                                     </tbody>
@@ -1308,7 +1309,7 @@
                         <table cellspacing="0" cellpadding="0" border="0">
                             <tbody>
                             <tr>
-                                <td class="tit">Ö¤Êé</td>
+                                <td class="tit">è¯ä¹¦</td>
                             </tr>
                             <tr>
                                 <td class="tb3">
@@ -1317,8 +1318,8 @@
                                         <tr>
                                             <td valign="top" class="time">2011/12</td>
                                             <td valign="top" class="rtbox">
-                                                <strong class="txt3">¶«ÈíÊµÑµÖ¤Êé</strong><span>
-                      £¨ºÏ¸ñ£©
+                                                <strong class="txt3">ä¸œè½¯å®è®­è¯ä¹¦</strong><span>
+                      ï¼ˆåˆæ ¼ï¼‰
                     </span>
                                             </td>
                                         </tr>
@@ -1333,8 +1334,8 @@
                                         <tr>
                                             <td valign="top" class="time">2010/9</td>
                                             <td valign="top" class="rtbox">
-                                                <strong class="txt3">È«¹ú¼ÆËã»úµÈ¼¶¶ş¼¶</strong><span>
-                      £¨ºÏ¸ñ£©
+                                                <strong class="txt3">å…¨å›½è®¡ç®—æœºç­‰çº§äºŒçº§</strong><span>
+                      ï¼ˆåˆæ ¼ï¼‰
                     </span>
                                             </td>
                                         </tr>
@@ -1349,8 +1350,8 @@
                                         <tr>
                                             <td valign="top" class="time">2010/6</td>
                                             <td valign="top" class="rtbox">
-                                                <strong class="txt3">´óÑ§Ó¢ÓïËÄ¼¶</strong><span>
-                      £¨426£©
+                                                <strong class="txt3">å¤§å­¦è‹±è¯­å››çº§</strong><span>
+                      ï¼ˆ426ï¼‰
                     </span>
                                             </td>
                                         </tr>
@@ -1365,8 +1366,8 @@
                                         <tr>
                                             <td valign="top" class="time">2010/5</td>
                                             <td valign="top" class="rtbox">
-                                                <strong class="txt3">È«¹úÊé»­µÈ¼¶¿¼ÊÔÖ¤Êé</strong><span>
-                      £¨ºÏ¸ñ£©
+                                                <strong class="txt3">å…¨å›½ä¹¦ç”»ç­‰çº§è€ƒè¯•è¯ä¹¦</strong><span>
+                      ï¼ˆåˆæ ¼ï¼‰
                     </span>
                                             </td>
                                         </tr>
@@ -1379,7 +1380,7 @@
                         <table cellspacing="0" cellpadding="0" border="0">
                             <tbody>
                             <tr>
-                                <td class="tit">ÅàÑµ¾­Àú</td>
+                                <td class="tit">åŸ¹è®­ç»å†</td>
                             </tr>
                             <tr>
                                 <td class="p15">
@@ -1387,7 +1388,7 @@
                                         <tbody>
                                         <tr>
                                             <td valign="top" class="time">2011/4--2011/11</td>
-                                            <td valign="top" class="rtbox"><strong class="txt3">Ç¶ÈëÊ½C/C++</strong></td>
+                                            <td valign="top" class="rtbox"><strong class="txt3">åµŒå…¥å¼C/C++</strong></td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -1398,8 +1399,8 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÅàÑµ»ú¹¹£º</td>
-                                                        <td valign="top" class="txt2">¶«ÈíÊµÑµÖĞĞÄ</td>
+                                                        <td valign="top" class="keys">åŸ¹è®­æœºæ„ï¼š</td>
+                                                        <td valign="top" class="txt2">ä¸œè½¯å®è®­ä¸­å¿ƒ</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -1408,8 +1409,8 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÅàÑµµØµã£º</td>
-                                                        <td valign="top" class="txt2">¶«ÈíÊµÑµÖĞĞÄ</td>
+                                                        <td valign="top" class="keys">åŸ¹è®­åœ°ç‚¹ï¼š</td>
+                                                        <td valign="top" class="txt2">ä¸œè½¯å®è®­ä¸­å¿ƒ</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -1420,9 +1421,9 @@
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td valign="top" class="keys">ÅàÑµÃèÊö£º</td>
+                                                        <td valign="top" class="keys">åŸ¹è®­æè¿°ï¼š</td>
                                                         <td valign="top" class="txt1">
-                                                            1.ÅàÑµÖ÷Òª¿Î³Ì£¬°üÀ¨linux£¬C¼°C++£¬ÈÕÓïµÈ»ù´¡ÓïÑÔÖªÊ¶¡£<br>2.ÅàÑµ¹ı³ÌÖĞ£¬×éÖ¯ÁËlinpop¼´Ê±Í¨Ñ¶ºÍmedia&#x20;playerÃ½Ìå²¥·ÅÏîÄ¿Êµ¼ù¡£
+                                                            1.åŸ¹è®­ä¸»è¦è¯¾ç¨‹ï¼ŒåŒ…æ‹¬linuxï¼ŒCåŠC++ï¼Œæ—¥è¯­ç­‰åŸºç¡€è¯­è¨€çŸ¥è¯†ã€‚<br>2.åŸ¹è®­è¿‡ç¨‹ä¸­ï¼Œç»„ç»‡äº†linpopå³æ—¶é€šè®¯å’Œmedia&#x20;playeråª’ä½“æ’­æ”¾é¡¹ç›®å®è·µã€‚
                                                         </td>
                                                     </tr>
                                                     </tbody>
