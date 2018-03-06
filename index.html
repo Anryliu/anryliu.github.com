@@ -100,7 +100,7 @@
         .column .tb1 {
             width: 900px;
             line-height: 28px;
-            color: #333333;
+            color: #666666;
             word-break: break-all;
             padding: 0 20px
         }
@@ -140,7 +140,7 @@
         .column .plate1 .f16 {
             font-size: 14px;
             font-weight: normal;
-            color: #333333
+            color: #666666
         }
 
         .column .plate1 .f12 {
@@ -162,7 +162,7 @@
         .column .txt1, .column .txt2, .column .txt3 {
             width: 815px;
             line-height: 28px;
-            color: #333333;
+            color: #666666;
             word-break: break-all
         }
 
@@ -228,7 +228,7 @@
         .column .rtbox {
             width: 765px;
             line-height: 28px;
-            color: #333333;
+            color: #666666;
             padding: 0 20px 0 15px;
             word-break: break-all
         }
@@ -396,6 +396,51 @@
         .eng .email {
             width: 270px
         }
+        @media print {
+            .column .plate1, .column .plate2 {
+                color: #818ba3;
+                font-size: 16px;
+                font-weight: initial;
+
+            }
+            .column .txt3{
+                font-weight: initial;
+            }
+            .column .rtbox strong{
+                font-weight: 300;
+            }
+            .column .name {
+                font-size: 24px;
+                padding-bottom: 18px;
+                color: #818ba3;
+            }
+            .column .cell .skco{
+                font-style: normal;
+                margin-top: 0;
+                padding-left: 10px;
+                background-color: #ddd;
+            }
+            .column .cell .skco {
+                width: 235px;
+                font-style: normal;
+                margin-top: 0;
+                padding-left: 10px;
+                background-color: #ddd;
+                z-index: 3;
+            }
+            .column .cell .skbg, .column .cell .skco {
+                display: inline-block;
+                width: 245px;
+                height: 18px;
+                line-height: 18px;
+                font-size: 12px;
+                color: #ffffff;
+                vertical-align: top;
+                margin-top: 6px;
+                background-color: #dddddd!important;
+                border-radius: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -415,7 +460,6 @@
                             <tr>
                                 <td colspan="2" class="name">刘延瑞</td>
                                 <td align="right" class="icard">
-                                    ID:95240813
                                 </td>
                             </tr>
                             <tr>
@@ -478,7 +522,7 @@
                                         </tr>
                                         <tr>
                                             <td valign="top" class="keys">公司：</td>
-                                            <td valign="top" class="txt2">亚信科技有限公司</td>
+                                            <td valign="top" class="txt2">用友网络科技股份有限公司</td>
                                         </tr>
                                         <tr>
                                             <td valign="top" class="keys">行业：</td>
@@ -656,8 +700,7 @@
                                         <tr>
                                             <td valign="top" class="keys">职能/职位：</td>
                                             <td valign="top" class="txt2">
-                                                <span class="tag">软件工程师</span><span
-                                                    class="tag">&nbsp;&nbsp;中级开发工程师</span>
+                                                <span class="tag">高级前端工程师</span>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -708,7 +751,7 @@
                                         <tbody>
                                         <tr>
                                             <td valign="top" class="keys">自我评价：</td>
-                                            <td valign="top" class="txt1">熟悉移动端的Web应用，主要技术HTML5&amp;CSS3,JavaScript,phongegap，bootstrap等框架，并且熟悉win8，Android，ios等移动端研发环境，做事有责任心，热爱团队合作并善于沟通，有较强的学习能力。</td>
+                                            <td valign="top" class="txt1">擅长技术HTML5&amp;CSS3,JavaScript,VUE,React&ReactNative,Gulp,Webpack,并且熟悉Android，ios等移动WebApp应用研发，做事有责任心，热爱团队合作并善于沟通，有较强的学习能力。</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -733,14 +776,54 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="time">2014/2-至今</td>
+                                            <td valign="top" class="time">2015/11-至今</td>
+                                            <td valign="top" class="rtbox">
+                                                <strong class="txt3">Web前端工程师</strong><span class="p5">|</span><span>云平台</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1" colspan="2">
+                                                <span>用友网络科技股份有限公司</span><span class="gray">&nbsp;[2年]
+                    </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="phd tb1 gray2" colspan="2">软件、云服务、金融服务<span class="p5">|</span>10000人以上<span
+                                                    class="p5">|</span>上市公司
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">工作描述：</td>
+                                                        <td valign="top" class="txt1">
+                                                            编写,维护 sass 业务组件,开发可复用业务模块,网站开发及维护
+
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2014/2-2015/11</td>
                                             <td valign="top" class="rtbox">
                                                 <strong class="txt3">中级前端工程师</strong><span class="p5">|</span><span>全球研发中心</span>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="phd tb1" colspan="2">
-                                                <span>亚信科技有限公司</span><span class="gray">&nbsp;[4年]
+                                                <span>亚信科技有限公司</span><span class="gray">&nbsp;[1年9个月]
                     </span>
                                             </td>
                                         </tr>
@@ -863,7 +946,46 @@
                                     <table cellspacing="0" cellpadding="0" border="0">
                                         <tbody>
                                         <tr>
-                                            <td valign="top" class="time">2014/12-至今</td>
+                                            <td valign="top" class="time">2015/11-至今</td>
+                                            <td valign="top" class="rtbox"><strong>用友云应用</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">项目描述：</td>
+                                                        <td valign="top" class="txt1">
+                                                            用友云提供SaaS应用、企业云解决方案、企业专业云应用软件、企业数据服务、企业安全服务,企业运营服务.我负责项目云应用作为其中一个节点,建设网站并开发对应功能.
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tb1" colspan="2">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td valign="top" class="keys">责任描述：</td>
+                                                        <td valign="top" class="txt1">1.应用中心架构设计,国际化方案及实现<br>2.编码,优化,维护云应用网站<br>3.负责整站的静态效果以及用户交互效果
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p15 con">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="time">2014/12-2015/11</td>
                                             <td valign="top" class="rtbox"><strong>Eboss</strong></td>
                                         </tr>
                                         <tr>
@@ -1288,12 +1410,37 @@
                                                     </tbody>
                                                 </table>
                                             </td>
-                                            <td class="tb2 cell yb" valign="top">
+                                            <td class="tb2 cell sl" valign="top">
                                                 <table cellspacing="0" cellpadding="0" border="0">
                                                     <tbody>
                                                     <tr>
-                                                        <td class="skill"><strong class="txt3">ASP.NET</strong></td>
-                                                        <td valign="top"><span class="skbg"><span class="skco">一般</span></span>
+                                                        <td class="skill"><strong class="txt3">VUE&React</strong></td>
+                                                        <td valign="top"><span class="skbg"><span class="skco">熟练</span></span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td class="tb2 cell sl" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="skill"><strong class="txt3">Webpack&Gulp</strong></td>
+                                                        <td valign="top"><span class="skbg"><span class="skco">熟练</span></span>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td class="tb2 cell sl" valign="top">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="skill"><strong class="txt3">Nodejs</strong></td>
+                                                        <td valign="top"><span class="skbg"><span class="skco">熟练</span></span>
                                                         </td>
                                                     </tr>
                                                     </tbody>
