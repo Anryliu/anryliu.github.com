@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React</title>
+
+    <style>
+        /*大层*/
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /*瀑布流层*/
+        .waterfall {
+            -moz-column-count: 4; /* Firefox */
+            -webkit-column-count: 4; /* Safari 和 Chrome */
+            column-count: 4;
+            -moz-column-gap: 1em;
+            -webkit-column-gap: 1em;
+            column-gap: 1em;
+        }
+
+        /*一个内容层*/
+        .item {
+            padding: 1em;
+            margin: 0 0 1em 0;
+            -moz-page-break-inside: avoid;
+            -webkit-column-break-inside: avoid;
+            break-inside: avoid;
+            border: 1px solid #000;
+        }
+
+        .item img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .abs {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ccc;
+            opacity: 1;
+            text-align: center;
+        }
+
+        .abs img {
+            width: auto;
+            max-width: 80%;
+            margin: 10px auto;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .abs .close {
+            color: #3c3d5d;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            cursor: pointer;
+            font-size: 40px;
+        }
+
+        .abs .close:hover {
+            color: red;
+        }
+
+        .loadmore {
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .loadmore:before {
+            width: 40%;
+            display: block;
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 15px;
+            border-top: 1px solid #ededed;
+        }
+
+        .loadmore:after {
+            width: 40%;
+            display: block;
+            content: "";
+            position: absolute;
+            right: 10px;
+            top: 15px;
+            border-top: 1px solid #ededed;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
+    <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+
+
+</head>
+<body>
+<div class="container" id="app">
+
+</div>
+<script type="text/babel">
+    var Waterfall = React.createClass({
+        getInitialState: function () {
+            return {
+                lists: [],
+                pagenum: 1,
+                bigUrl:'',
+                show:false
+            };
+        },
+        componentDidMount: function () {
+            this.getLists(1);
+        },
+        getLists: _.debounce(
+            function (num) {
+                console.log(num);
+                var vm = this;
+                axios.get('http://gank.io/api/data/%E7%A6%8F%E5%88%A9/15/' + num)
+                    .then(function (response) {
+                        vm.setState({
+                            lists: [...vm.state.lists, ...response.data.results],
+                            pagenum:num
+                        });
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    })
+            },
+            500
+        ),
+        handleClick: function (event) {
+            this.getLists(++this.state.pagenum);
+        },
+        showbig:function (data,event) {
+            debugger;
+            this.setState({
+                bigUrl:data.url,
+                show:true,
+            })
+        },
+        closebigimg:function () {
+            this.setState({
+                show:false,
+            })
+        },
+        render: function () {
+            const lists = this.state.lists;
+            const self = this;
+            function images() {
+                if (lists.length) {
+                    return lists.map(function (item, index) {
+                        return <img src={item.url} onClick={self.showbig.bind(this,item)} key={index} alt=""/>
+                    })
+                } else {
+                    return <div className="center">loading...</div>;
+                }
+            }
+            return <div>
+                <div className="abs" style={{display:this.state.show?"block":'none'}}>
+                    <span className="close" onClick={this.closebigimg}>x</span>
+                    <img src={this.state.bigUrl} alt=""/>
+                </div>
+                <div className="waterfall">
+                    {images()}
+                </div>
+                <div className="loadmore" onClick={this.handleClick}>
+                    <span>加载更多</span>
+                </div>
+            </div>;
+        }
+    });
+    ReactDOM.render(
+            <Waterfall></Waterfall>,
+        document.getElementById('app')
+    );
+</script>
+</body>
+</html>

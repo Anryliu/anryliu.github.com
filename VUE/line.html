@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .loadmore{
+            text-align: center;cursor: pointer;
+            position: relative;
+        }
+        .loadmore:before{
+            width: 40%;
+            display: block;
+            content: "";
+            position: absolute;
+            border-top: 1px solid #000;
+            left: 10px;
+            top: 20px;
+        }
+        .loadmore:after{
+            width: 40%;
+            display: block;
+            content: "";
+            position: absolute;
+            border-top: 1px solid #000;
+            right: 10px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div style="position: relative;">
+
+    <div class="loadmore">
+        <span>more</span>
+    </div>
+</div>
+<div style="position: relative;">
+
+    <div class="loadmore">
+        <span>more</span>
+    </div>
+</div>
+<div class="loadmore">
+    <span>more</span>
+</div>
+</body>
+</html>

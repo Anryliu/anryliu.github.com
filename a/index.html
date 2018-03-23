@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        html,body,.swiper-container{
+            width: 100%;
+            height: 100%;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="img/1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/3.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/4.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/5.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/7.jpg" alt="">
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/mousewheel.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+    $(function () {
+        const mySwiper = new Swiper ('.swiper-container', {
+            speed: 400,
+            spaceBetween: 100,
+            autoHeight:true,
+            direction:'vertical',
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+        })
+    })
+</script>
+</body>
+</html>
